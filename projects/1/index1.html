@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 2</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="adskdj">
+	<meta name="keywords" content="HTML, CSS, XML, Javascript, Jquery">
+	<meta name="author" content="Jasurbek Tolibov Yoruqlovich">
+	<meta http-equiv="refresh" content="30">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body>
+
+
+<h1>Navigation bar</h1>
+<ul>
+	<li><a href="#home">Home</a></li>	
+	<li><a href="#news">News</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="#about">About</a></li>
+</ul><br><br>
+
+<div style="background-color:black; color:#1ef2df; text-align:center;padding:8px; ">
+	<h2>London</h2>
+	<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div><br><br>
+
+<button onclick="myFunction()">Hide Elements</button>
+
+
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2>Multiple classes</h2>
+<h2 class="big ben">London</h2>
+<h2 class="big">Paris</h2> 
+<h2 class="big">Tokyo</h2> 
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+<br><br>
+
+<iframe src="index.html" style="width:800px;height:800px"></iframe><br><br>
+<h2>Use Javascript to Change Text</h2>
+<p>This example writes "Hello Javascript!" into an HTML element with id="demo":</p>
+<p id="demo"></p><br><br>
+
+<h2>My First Javascript</h2>
+<button type="button" 
+onclick="document.getElementById('sample').innerHTML=Date()">
+Click me to display Date and Time.</button>
+
+<p id="sample"></p>
+
+<p id="demon">Javascript can change the style of an HTML element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	function myFunction() {
+		document.getElementById("demon").style.fontSize="25px";
+		document.getElementById("demon").style.color="red";
+		document.getElementById("demon").style.backgroundColor="yellow";
+	}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<script>
+	document.getElementById("demo").innerHTML="Hello Javascript!";
+</script>
+
+<script>
+	function displayResult() {
+	document.getElementById("myHeader").innerHTML="Have a nice day!";
+	}
+</script>
+
+<script>
+	function myFunction() {
+	var x = document.getElementsByClassName("city");
+	for (var i=0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
